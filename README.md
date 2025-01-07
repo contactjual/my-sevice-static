@@ -1,0 +1,3 @@
+live view (static)..............................
+
+https://contactjual.github.io/my-sevice-static/
