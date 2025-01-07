@@ -1,0 +1,191 @@
+/* laptop-view */
+@media screen and (max-width: 1500px) /* and (min-width: 1000px)*/ {
+    /* header */
+    .background-img .tex-area {
+        width: 500px;
+    }
+    .background-img .tex-area h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .background-img p {
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+    /* main>person-and-failures */
+    main .person-and-failures {
+        justify-content: space-between;
+    }
+    main .person-and-failures .person img {
+        width: 400px;
+    }
+    main .failures {
+        flex-basis: 40%;
+    }
+
+    /* main>plans */
+    .plans .headline h1 {
+        font-size: 30px;
+    }
+    .plans .plan-items img {
+        width: 70px;
+    }
+    .plans .plan-items h2 {
+        font-size: 20px;
+    }
+    .plans .plan-items p {
+        font-size: 18px;
+    }
+    
+    /* hand-watch */
+    .hand-background-text h1 {
+        width: 400px;
+        font-size: 2.1em;
+        line-height: 55px;
+    }
+
+    /* footer */
+    footer h1 {
+        font-size: 2.6em;
+    }
+    footer h2 {
+        font-size: 1.5em;
+    }
+    footer .future-and-address {
+        flex-basis: 300px;
+    }
+    footer {
+        padding: 100px 0;
+    }
+}
+
+
+/* tablet-view */
+@media screen and (max-width: 1000px) {
+    /* header */
+    .header-area .background-img {
+        background-image: url(images/banner/banner2_crop.png);
+        height: 500px;
+        background-position: center;
+    }
+    .background-img #flex-basis {
+        text-align: center;
+        color: rgb(231, 223, 223);
+    }
+    .background-img p {
+        color: rgb(248, 234, 234);
+    }
+
+
+    /* main>person-and-failure */
+    main .person-and-failures {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    main .person-and-failures .person img {
+        width: 500px;
+        margin-bottom: 50px;
+    }
+    main .person-and-failures .h-p-center {
+        text-align: center;
+    }
+    main .person-and-failures .li-center {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* plans */
+    .plans .plan-items {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 50px;
+    }
+
+    /* hand-watch */
+    .hand-background-text {
+        background-image: url(images/gradient2.png), url(images/watch.png);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+    }
+    .hand-background-text .text  {
+        top: 30px;
+        left: 45px;
+        text-align: center;
+    }
+    .hand-background-text h1 {
+        width: 400px;
+        color: var(--whiteColor);
+        font-size: 1.7em;
+        line-height: 35px;
+    }
+    .hand-background-text button {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    /* footer */
+    footer .flex-style {
+        gap: 70px;
+    }
+    footer #Subscribe {
+        margin-top: 15px;
+    }
+    footer input[type="email"] {
+        font-size: 16px;
+        padding: 12px 18px;
+        margin: 20px 0 15px 0;
+    }
+    footer button {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+
+/* .mobile-view */
+@media screen and (max-width: 500px) {
+    
+    body {
+        width: fit-content;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .background-img p, .person-and-failures .h-p-center p, footer p {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .person-and-failures li {
+        font-size: 19px;
+    }
+
+    /* header */
+    .background-img .tex-area {
+        width: auto;
+        display: block;
+    }
+    .header-area .background-img {
+        background-image: url(images/banner/banner2_crop.png);
+        height: 500px;
+        background-position: center;
+    }
+
+    /* hand-watch */
+    .hand-background-text .text  {
+        position: absolute;
+        left: 27px;
+        top: 40px;
+    }
+
+    /* footer  */
+    footer .flex-style {
+        text-align: center;
+        flex-direction: column;
+    }
+}
